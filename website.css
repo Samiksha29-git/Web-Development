@@ -1,0 +1,535 @@
+body{
+    margin: 0px;
+    background-color: rgb(251, 251, 251);
+}
+
+a{
+    text-decoration: none;
+}
+
+#a4{
+    font-size: 17px;
+    color: black;
+}
+
+#div1{
+    background-color: rgb(39, 37, 37);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#etlogo{
+    image-resolution: 1000000000px;
+    height: 70px;
+    margin: 25px;
+}
+
+#navbar{
+    top: 0px;
+    z-index: 999;
+    text-align: right;
+    overflow: hidden;
+    top: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+}
+
+ul li a{
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+table{
+    width: 100%;
+}
+
+.table3{
+    border-spacing: 0px;
+    background-color: rgb(241, 227, 195);
+}
+
+#td1{
+    border-spacing: 0px;
+}
+
+#nav{
+    height: 20px;
+}
+
+.text{
+    font-family: "Balthazar", serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 37px;
+    letter-spacing: 5px;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 15px;
+    border-right: 1px solid;
+    width: 87%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 20px;
+    animation:
+        typing 5s steps(32),
+        cursor .4s step-end infinite alternate
+}
+
+@keyframes cursor{
+  50%{border-color: transparent}
+}
+
+@keyframes typing{
+    from{width: 0}
+}
+
+#button1{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+#button1:hover{
+    background-color: rgb(57, 53, 53);
+}
+
+#p2{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#main0 {
+    margin: 0px;
+    width: 800px;
+    height: 560px;
+    background-image: url(Untitled\ design.png);
+    background-size: cover;
+}
+
+#h4{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-family: "Italiana", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#h5{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-family: "Italiana", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#button3{
+    background-color: rgb(152, 238, 23);
+    margin-left: 50px;
+    border-radius: 20px;
+    height: 30px;
+    width: 130px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#img5{
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 300px;
+    width: 320px;
+}
+
+#img4{
+    height: 300px;
+    width: 320px;
+    margin-top: 30px;
+    background-size: cover;
+}
+
+#a3{
+    color: black;
+    margin-left: 50px;
+}
+
+#a2{
+    color: black;
+}
+
+#button4{
+    margin-left: 40px;
+    border-radius: 20px;
+    height: 30px;
+    background-color: white;
+    box-shadow: none;
+    cursor: pointer;
+}
+  
+#main3 {
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+    height: 280px;
+    background-image: url(frontpage3.png);
+    background-size: cover;
+}
+  
+
+#container1{
+    width: 400px;
+    height: 351px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 46%;
+    left: 60.5%;
+    overflow: hidden;
+    border: 2px solid #ffff;
+    border-radius: 0px;
+}
+
+#wrapper1{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+#img1{
+    width: 100%;
+}
+
+#container2{
+    width: 400px;
+    height: 280px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 86.5%;
+    left: 87%;
+    overflow: hidden;
+    border: 1px solid #ffff;
+    border-radius: 0px;
+}
+
+#wrapper2{
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+
+#div8{
+    height: 700px;
+}
+
+.content-section{
+    background-image: url(customer0.png);
+    background-size: cover;
+}
+
+.container{
+    padding: 2rem;
+    margin-right: 1000px;
+    height: 650px;
+    color: black;
+    font-size: 33px;
+    width: 600px;
+}
+  
+.slider-wrapper{
+    position: relative;
+    max-width: 58rem;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 120px;
+    color: black;
+    border-radius: 20px;
+    width: 550px;
+  }
+
+#p3{
+    font: bolder;
+    font-size: 30px;
+}
+  
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 16%, 68%, 0.25);
+    border-radius: 0.5rem;
+    height: 400px;
+    width: 550px;
+    font-size: 20px;
+  }
+  
+.slider table{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    height: 250px;
+  }
+  
+.slide-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    margin: 200px;
+  }
+  
+.slide-nav a{
+    width: 300px;
+    height: 0rem;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  
+.slide-nav a:hover{
+    opacity: 1;
+}
+
+#td2{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+#img2{
+    width: 100%;
+}
+
+#img3{
+    height: 500px;
+    width: 420px;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+#div2{
+    margin-top: 100px;
+}
+
+.p1{
+    font-family: "Italiana", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 50px;
+    font-size: 35px;
+    padding-left: 32px;
+    font: bolder;
+}
+
+#table1{
+    margin-left: 0px;
+    padding-right: 0px;
+    color: black;
+}
+
+
+#button2{
+    background-color: rgb(77, 75, 75);
+    color: white;
+    font-size: 15px;
+    height: 25px;
+    width: 120px;
+    margin: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#button2:hover{
+    background-color: rgb(52, 50, 50);
+}
+
+#table2{
+    width: 100%;
+    padding: 100px;
+    border-spacing: 20px;
+    padding-left: 400px;
+}
+
+
+#div3{
+    background-color: rgb(39, 37, 37);
+    color: white;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#a1{
+    color: black;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+#message{
+    width: 250px;
+    height: 40px;
+}
+
+.div7 {
+    background-image: url('cleanbg.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    width: 100%;   
+    display: flex; 
+    justify-content: center; /* Horizontally center content */
+    align-items: center;     /* Vertically center content */
+    margin: 25px 0;
+}
+
+#div4 {
+    border-radius: 50%;
+    background-color: rgba(248, 228, 203, 0.5); /* Adjust last value for transparency */
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div6 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.6); /* Transparent white circle */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#div5 {
+    text-align: center; 
+    color: #000;        
+    font-size: 18px;    
+    font-family: Arial, sans-serif;
+    width: 80%;         
+}
+
+.footer {
+    background-color: rgb(39, 37, 37);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 150px;
+}
+
+.footer .social-icons {
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: rgb(183, 175, 175);
+}
+
+.footer .nav-links {
+    margin: 20px 0;
+}
+
+.footer .nav-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer .nav-links a:hover {
+    color: rgb(183, 175, 175);
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .footer .social-icons a,
+    .footer .nav-links a {
+        margin: 0 5px;
+        font-size: 18px;
+    }
+}
+
+#p8{
+    color: white;
+}
+
+#a5{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#a5:hover{
+    color: rgb(183, 175, 175);
+}

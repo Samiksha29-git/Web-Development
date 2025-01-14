@@ -1,0 +1,94 @@
+body{
+    margin: 0px;
+}
+
+#img1{
+    height: 400px;
+    width: 300px;
+    padding-left: 50px;
+}
+
+#img0{
+    height: 400px;
+    width: 300px;
+
+}
+
+#table1{
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#p5{
+    margin-left: 50px;
+}
+
+#p6{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#p7{
+    font-size: 20px;
+}
+
+#button5{
+    margin-left: 40px;
+    border-radius: 20px;
+    height: 30px;
+    background-color: white;
+    box-shadow: none;
+    cursor: pointer;
+    width: 100px;
+    font-size: 15px;
+}
+
+#img6{
+    height: 20px;
+    width: 120px;
+    padding-top: 0px;
+    padding-left: 5px;
+}
+
+#etlogo{
+    image-resolution: 1000000000px;
+    height: 70px;
+    margin: 25px;
+}
+
+#navbar{
+    top: 0px;
+    z-index: 999;
+    text-align: right;
+    overflow: hidden;
+    position: sticky;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+}
+
+ul li a{
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+table{
+    width: 100%;
+}
+
+#a4{
+    font-size: 17px;
+    color: black;
+}

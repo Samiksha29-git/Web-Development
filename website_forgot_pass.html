@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website_login.css">
+</head>
+<body>
+    <!-- Login Section -->
+    <div class="container">
+        <form class="login-form" action="website.html" onsubmit="return validationform(event)">
+            <h2>SET PASSWORD</h2>
+            
+            <!-- Email Input -->
+            <label for="name">EMAIL</label>
+            <input name="name" type="text" id="name" placeholder="Enter your email" required>
+            <div id="nameerror" class="error" style="color: red;"></div>
+
+            <!-- Password Input -->
+            <label for="password">SET NEW PASSWORD</label>
+            <input name="password" type="password" id="password" placeholder="Enter your password" required>
+            <div id="passworderror" class="error" style="color: red;"></div>
+
+            <!-- Submit Button -->
+            <button type="submit">Log In</button>
+
+            <!-- Additional Links -->
+            <div class="links">
+                <p>Don't have an account? <a href="website_sign.html">Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- JavaScript for Validation -->
+    <script>
+        function validationform(event) {
+            // Prevent default form submission
+            event.preventDefault();
+
+            // Clear previous error messages
+            document.getElementById('nameerror').innerText = '';
+            document.getElementById('passworderror').innerText = '';
+
+            let isvalid = true;
+
+            // Validate email
+            const name_1 = document.getElementById('name').value;
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(name_1)) {
+                document.getElementById('nameerror').innerText = 'Please enter a valid email address.';
+                isvalid = false;
+            }
+
+            // Validate password
+            const password_1 = document.getElementById('password').value;
+            if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password_1)) {
+                document.getElementById('passworderror').innerText = 
+                    'Password must be at least 8 characters long, include one uppercase, one lowercase, one digit, and one special character.';
+                isvalid = false;
+            }
+
+            // If valid, submit the form programmatically
+            if (isvalid) {
+                alert('Form submitted successfully.');
+                event.target.submit(); // Submit the form programmatically
+            }
+        }
+    </script>
+</body>
+</html>

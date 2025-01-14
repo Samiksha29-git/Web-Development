@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website_newsletter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subscribe to our newsletter.</h1>
+        <table style="width: 100%;">
+            <tr>
+                <td><section>
+                    <h2 id="dynamic-title">Email</h2></td>
+                <td><input id="message" placeholder="Enter your email"></input><br></td></tr>
+            <tr><td colspan="2"><button id="update-message">Confirm Email</button></section></td></tr>
+
+            <tr>
+                <td><section>
+                    <h2>Preferred content</h2></td>
+                    <td><input type="text" id="item-input" placeholder="Sustainibility | Products | fashion | inspiration" /></td></tr>
+            <tr><td colspan="2"><button id="add-item">Add</button></td></tr>
+        </table>
+
+        
+            
+            <ul id="item-list"></ul>
+        </section>
+
+        <button id="toggle-theme">Subscribe</button>
+    </div>
+
+    <script>
+        document.title = 'Earthlytables.com'
+        // Update message functionality
+        document.getElementById('update-message').addEventListener('click', () => {
+            const message = document.getElementById('message');
+            message.textContent = "The message has been updated!";
+        });
+
+        // Add item to list functionality
+        document.getElementById('add-item').addEventListener('click', () => {
+            const input = document.getElementById('item-input');
+            const itemText = input.value.trim();
+
+            if (itemText) {
+                const li = document.createElement('li');
+                li.className = 'list-item';
+
+                const span = document.createElement('span');
+                span.textContent = itemText;
+
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.addEventListener('click', () => li.remove());
+
+                li.appendChild(span);
+                li.appendChild(removeButton);
+
+                document.getElementById('item-list').appendChild(li);
+
+                input.value = '';
+            }
+        });
+
+        // Toggle theme functionality
+        document.getElementById('toggle-theme').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
